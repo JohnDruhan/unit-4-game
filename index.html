@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector Game</title>
+
+    <!-- jQuery Link -->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <!-- Game Logic -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+    <!-- <script type="text/javascript" src="assets/javascript/game.js"></script> -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+  </head>
+  <body>
+
+    <h1 id="title">Crystal Collector Game</h1>
+
+    <div id="rules-area">
+        <h2>Instructions</h2>
+        <br>
+      <h4>You will be given a random number at <br> the start of the game.</h4>
+      <br>
+      <h4>There are four crystals below. <br> By clicking on a crystal you will add a specific amount of points to your total score.</h4>
+      <br>
+      <h4>You win the game by matching <br> your total score to the random number. <br>  You lose the game if your total score goes above <br> the random number.</h4>
+      <br>
+      <h4>The value of each crystal is hidden from you <br> until you click on it.</h4>
+      <br>
+      <h4>Each time when the game starts, the game will change the values of each crystal.</h4>
+    </div>
+
+    <div id="random-title">Try To Match This Number <br>By Clicking <br> The Crystal Icons Below</div>
+
+    <div id="screen">
+      <!-- Random Number Display -->
+      
+      <div id="random-area"></div>
+      
+      <!-- Wins/Losses Display -->
+      <div id="win-area"></div>
+    </div>
+
+    <div>
+      <!-- Crystals -->
+      <div id="crystal-area"></div>
+      <div id="score-title">Your total score is:</div>
+      <!-- Score Display -->
+      <div id="score-area"></div>
+    </div>
+
+  </body>
+</html>

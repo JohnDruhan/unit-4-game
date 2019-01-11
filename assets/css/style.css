@@ -1,9 +1,20 @@
 body {
     background-image: url("../images/background_img.jpg");
-    background-repeat: repeat;
+    background-repeat: no repeat;
     font-family: Arial, Helvetica, sans-serif;
   }
   
+.container {
+  height: auto;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+	max-width: 960px;
+  margin: 0 auto -100px;
+  margin-left: 20px;
+	clear: both;
+}
+
   #screen {
     overflow: auto;
   }
@@ -13,6 +24,7 @@ body {
   }
   
   #title {
+    margin-top: 5px;
     text-align: center;
     width: 250px;
     padding: 4px;
@@ -22,23 +34,13 @@ body {
   }
   
   #rules-area {
-      text-align: center;
+    text-align: center;
     width: 400px;
     height: 327px;
     padding: 4px;
     margin-bottom: 1px;
     color: green;
     background-color: bisque;
-  }
-  
-  #random-area {
-    text-align: center;
-    width: 210px;
-    height: 40px;
-    padding: 4px;
-    font-size: 3vw;
-    color: purple;
-    background-color: mediumseagreen;
   }
 
   #random-title {
@@ -50,21 +52,45 @@ body {
     background-color: mediumseagreen;
   }
   
-  #score-area {
+  #random-area {
     text-align: center;
     width: 210px;
-    height: 40px;
+    height: 50px;
     padding: 4px;
-    color: ghostwhite;
-    background-color: darkcyan;
+    font-size: 3vw;
+    color: purple;
+    background-color: mediumseagreen;
+  }
+
+  #win-area {
+    text-align: center;
+    width: 210px;
+    height: 50px;
+    padding: 4px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: aqua;
+    color: purple;
+    font-size: 3ev;
   }
   
+
   #score-title {
     text-align: center;
     width: 210px;
     padding: 4px;
     margin-top: 10px;
     color: white;
+    background-color: darkcyan;
+  }
+  
+  #score-area {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 210px;
+    height: 40px;
+    padding: 4px;
+    color: ghostwhite;
     background-color: darkcyan;
   }
   
@@ -82,14 +108,6 @@ body {
   }
   
   #score-number {
-    font-size: 3vw;
-  }
-  
-  #win-area {
-    height: 50px;
-    padding: 2px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    background-color: aqua;
+    font-size: 25px;
   }
   

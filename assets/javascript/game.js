@@ -73,14 +73,14 @@ $(document).ready(function() {
       // If the user won...
       if (didUserWin === true) {
         // Show victory message, restart the game, and render the new "current guess" number.
-        $("#win-area").append($("<p>").text("You won!!"));
+        $("#win-area").append($("<p>").text("You Won The Last Game"));
         setGame();
         renderMatchingNumber();
       }
       // If the user lost...
       else if (didUserWin === false) {
         // Show defeat message, restart the game, and render the new "current guess" number.
-        $("#win-area").append($("<p>").text("You lost!!"));
+        $("#win-area").append($("<p>").text("You Lost The Last Game"));
         setGame();
         renderMatchingNumber();
       }
@@ -89,8 +89,8 @@ $(document).ready(function() {
       var wSpan = $("<span>").text(wins);
       var lSpan = $("<span>").text(losses);
   
-      var pWins = $("<p>").text("Wins: ");
-      var pLosses = $("<p>").text("Losses: ");
+      var pWins = $("<p>").text("Total Wins: ");
+      var pLosses = $("<p>").text("Total Losses: ");
   
       pWins.append(wSpan);
       pLosses.append(lSpan);

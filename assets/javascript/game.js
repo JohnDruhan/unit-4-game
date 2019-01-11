@@ -1,3 +1,18 @@
+//    Crystal Game Psudo Code
+      // reset Game
+      // Generate random target number
+      // Generate random values for each crystal and assign to image
+
+      // play and update page
+      //   did win? update
+      //   did loose? update
+
+      // Update win/lost score
+
+      // reset game
+
+// 
+
 // Execute this code when the DOM has fully loaded.
 $(document).ready(function() {
 

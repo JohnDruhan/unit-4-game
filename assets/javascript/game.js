@@ -64,10 +64,11 @@ $(document).ready(function() {
     }
   
     // Update the page =
-        // If the user won...
-       // Show "you won" - Restart game - generate new random number.
-       // else If the user lost...
+      // If the user won...
+      // Show "you won" - Restart game - generate new random number.
+      // else If the user lost...
       // Show "you lost", - Restart game - generate new random number.
+      // Build win/loss display and append it to page.
     function updateDom(didUserWin) {
       $("#win-area").empty();
       if (didUserWin === true) {
@@ -82,7 +83,6 @@ $(document).ready(function() {
         renderMatchingNumber();
       }
   
-      // Build win/loss display and append it to page.
       var wSpan = $("<span>").text(wins);
       var lSpan = $("<span>").text(losses);
   
@@ -106,7 +106,7 @@ $(document).ready(function() {
       }
     }
   
-    // Update our total score number based on which crystal was clicked.
+    // Update total score number based on which crystal was clicked.
     function updateMatchingNumber(crystal) {
       yourMatchingNumber += crystals[crystal.attr("data-name")].points;
     }

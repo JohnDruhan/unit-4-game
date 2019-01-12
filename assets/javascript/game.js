@@ -55,7 +55,7 @@ $(document).ready(function() {
     }
   
     // Resets the game to 0 - Generate random crystal values -
-    // - Generate a random target number and render it to the page.
+    // - Generate a random target number and render it to the page in "random Area".
     function setGame() {
       yourMatchingNumber = 0;
       crystals = randomNumCrystals();
